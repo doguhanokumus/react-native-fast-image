@@ -41,6 +41,8 @@ export type Priorities = $Values<Priority>
 export type CacheControls = $Values<CacheControl>
 
 export type PreloadFn = (sources: Array<FastImageSource>) => void
+export type LoadImageFn = (source: FastImageSource) => void
+
 export type FastImageSource = {
     uri?: string,
     headers?: Object,
